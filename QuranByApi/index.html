@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Document</title>
+
+</head>
+<body>
+    
+  
+    <div class="d-flex flex-column">
+
+        <div>
+            <img src="./Images/QuranEditImg.png" alt="">
+            <label class="text-center w-50 text-light heading ms-4">Quran App</label>
+        </div>
+
+
+       
+        <div class="d-flex justify-content-center">
+
+
+                    <div class="Box mb-0 text-center text-light">
+            
+                                <div class="alert bg-danger d-none" id="msg">Audio is already Playing </div>
+
+                                <div class="d-flex flex-column justify-content-center align-items-center">
+                        
+                                        <h4 >Enter Surah Number</h4>
+                                        <input type="number" id="surah_number"   class="text-dark  border border-dark border-2 rounded">
+                                        <button id="submitSurahNumber" class="btn bg-dark border-none text-light mt-2">Submit</button>
+                                
+                                </div>
+
+                                <!-- Visibility -->
+                                <div id="divToshow" class="divToshow">
+                                        <div class="d-flex flex-direction-row justify-content-around mt-3 ">
+                                        
+                                            <div>
+                        
+                                                <h4>Enter starting Ayah</h4> 
+                                                <input type="number" id="start" min="1" value="1" class="text-dark  border border-dark border-2 rounded">
+                                
+                                            </div>
+                                            
+                                            <div>
+                        
+                                                <h4 >Enter ending Ayah </h4> 
+                        
+                                                <input type="number" id="end" min="1" value="1" class="text-dark  border border-dark border-2 rounded">
+                                    
+                                            </div>
+                        
+                                            
+                                        </div>
+                        
+                                        <button id="btn" class="btn bg-dark border-none text-light mt-2">Serch</button>
+                                
+                                        <div class="ayahPlace mt-3 h-50 ">
+                                        
+                                                <h3>
+                                                    Quran Ayats
+                                                </h3>
+                                        
+                                                <h4 id="surah_name" class="text-decoration-underline">
+                                        
+                                                </h4>
+                                            
+                                            
+                                        </div>
+
+                                        <div class="ayats_ComboBTN d-flex flex-column  align-items-end ">
+                                        
+                                    
+                                            <div class="w-100 h3 ayat_Box d-flex flex-column align-items-end">
+                                                
+                                                    <button class="btn text-light   icon_btn " id="volume_iconBtn">
+                                                    <label class="fs-1 btn"> 🔊</label>
+                                                        
+                                                    </button>
+                                            </div>
+
+                                            <div  class="d-flex justify-content-center align-items-center w-100"> 
+                                                
+                                                        <div id="ayat_div" class="d-flex  flex-column justify-content-center align-items-center">
+                                                                    
+                                                        </div>
+                    
+                                                
+                                            <div>
+
+                                      </div>
+                            </div>
+                                
+                        
+                        
+                                
+                            
+                            
+                            </div>
+                         
+                        </div >
+                        
+                     </div>
+
+               </div>
+        </div>
+</div>
+    <script src="./app.js"></script>
+    </body>
+</html>
